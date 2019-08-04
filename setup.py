@@ -122,6 +122,7 @@ class make_long_version_py_git(Command):
                      "TAG_PREFIX": "tag-",
                      "PARENTDIR_PREFIX": "parentdir_prefix",
                      "VERSIONFILE_SOURCE": "versionfile_source",
+                     "REMOTE_URL": "",
                      })
         return 0
 
