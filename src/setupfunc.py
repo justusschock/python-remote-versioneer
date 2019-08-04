@@ -18,7 +18,8 @@ a section like:
  versionfile_build = myproject/_version.py
  tag_prefix =
  parentdir_prefix = myproject-
-
+ remote = https://github.com/link/to/myproect
+ 
 You will also need to edit your setup.py to use the results:
 
  import versioneer
@@ -41,6 +42,7 @@ SAMPLE_CONFIG = """
 #versionfile_build =
 #tag_prefix =
 #parentdir_prefix =
+#remote =
 
 """
 
@@ -74,6 +76,7 @@ def do_setup():
                         "TAG_PREFIX": cfg.tag_prefix,
                         "PARENTDIR_PREFIX": cfg.parentdir_prefix,
                         "VERSIONFILE_SOURCE": cfg.versionfile_source,
+                        "REMOTE_URL": cfg.remote,
                         })
 
     ipy = os.path.join(os.path.dirname(cfg.versionfile_source),
