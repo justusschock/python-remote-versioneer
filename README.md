@@ -3,11 +3,10 @@ The Versioneer
 
 * like a rocketeer, but for versions!
 * https://github.com/warner/python-versioneer
-* Brian Warner
+* Originally by: Brian Warner ([@warner](https://github.com/warner))
+* Extended by: Justus Schock ([@justusschock](https://github.com/justusschock))
 * License: Public Domain
 * Compatible With: python2.6, 2.7, 3.2, 3.3, 3.4, 3.5, 3.6, and pypy
-* [![Latest Version][pypi-image]][pypi-url]
-* [![Build Status][travis-image]][travis-url]
 
 This is a tool for managing a recorded version number in distutils-based
 python projects. The goal is to remove the tedious and error-prone "update
@@ -15,6 +14,8 @@ the embedded version string" step from your release process. Making a new
 release should be as easy as recording a new tag in your version-control
 system, and maybe making new tarballs.
 
+## Differences to the original version
+In opposite to the original version, this one supports specifying a git remote. This is especially useful for python namespace packaging, since the versions across the different parts of the namespaces should be the same (Which can be achieved by specifying the same remote to check for.
 
 ## Quick Install
 
