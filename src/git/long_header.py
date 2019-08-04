@@ -44,6 +44,7 @@ def get_config():
     cfg.parentdir_prefix = "%(PARENTDIR_PREFIX)s"
     cfg.versionfile_source = "%(VERSIONFILE_SOURCE)s"
     cfg.verbose = False
+    cfg.remote = "%(REMOTE_URL)s"
     return cfg
 
 
