@@ -2,7 +2,8 @@ The Versioneer
 ==============
 
 * like a rocketeer, but for versions!
-* https://github.com/warner/python-versioneer
+* Original: https://github.com/warner/python-versioneer
+* Extended Version: https://github.com/justusschock/python-remote-versioneer
 * Originally by: Brian Warner ([@warner](https://github.com/warner))
 * Extended by: Justus Schock ([@justusschock](https://github.com/justusschock))
 * License: Public Domain
