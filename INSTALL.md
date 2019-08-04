@@ -57,6 +57,11 @@ First, decide on values for the following configuration variables:
   start of all unpacked tarball filenames. If your tarball unpacks into
   'myproject-1.2.0', this should be 'myproject-'. To disable this feature,
   just omit the field from your `setup.cfg`.
+  
+ * `remote`:
+ 
+  the url pointing to the remote repository to check if the VCS version identifier is used.
+  For namespace packages all parts of the namespace should point to the same remote repository.
 
 This tool provides one script, named `versioneer`. That script has one mode,
 "install", which writes a copy of `versioneer.py` into the current directory
@@ -76,6 +81,7 @@ To versioneer-enable your project:
   versionfile_build = myproject/_version.py
   tag_prefix =
   parentdir_prefix = myproject-
+  remote = https://github.com/url/to/my/repo
   ````
 
 * 2: Run `versioneer install`. This will do the following:
