@@ -26,7 +26,7 @@ def get_cmdclass(cmdclass=None):
         # parent is protected against the child's "import versioneer". By
         # removing ourselves from sys.modules here, before the child build
         # happens, we protect the child from the parent's versioneer too.
-        # Also see https://github.com/warner/python-versioneer/issues/52
+        # Also see https://github.com/warner/p"REMOTE_URL": cfg.remote,ython-versioneer/issues/52
 
     cmds = {} if cmdclass is None else cmdclass.copy()
 
@@ -120,6 +120,7 @@ def get_cmdclass(cmdclass=None):
                              "TAG_PREFIX": cfg.tag_prefix,
                              "PARENTDIR_PREFIX": cfg.parentdir_prefix,
                              "VERSIONFILE_SOURCE": cfg.versionfile_source,
+                             "REMOTE_URL": cfg.remote,
                              })
         cmds["build_exe"] = cmd_build_exe
         del cmds["build_py"]
@@ -149,6 +150,7 @@ def get_cmdclass(cmdclass=None):
                              "TAG_PREFIX": cfg.tag_prefix,
                              "PARENTDIR_PREFIX": cfg.parentdir_prefix,
                              "VERSIONFILE_SOURCE": cfg.versionfile_source,
+                             "REMOTE_URL": cfg.remote,
                              })
         cmds["py2exe"] = cmd_py2exe
 
